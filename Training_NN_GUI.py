@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QFileDialog,
 import tensorflow as tf
 from keras.callbacks import LearningRateScheduler
 from Load_data_for_training_V2 import  Load_data_RNA
-from Inception_resnet_2inp_V2 import Inception_resnet2inp_V2
+from ModiDec_NN import ModiDeC_model
 import os
 import numpy as np
 
@@ -124,7 +124,7 @@ class MainWindow(QMainWindow):
 
         """ /////define the model /////"""
 
-        model = Inception_resnet2inp_V2(Inp_1 = chunck_size, Inp_2 = max_seq_len, labels = labels, kmer_model=k_mer)
+        model = ModiDeC_model(Inp_1 = chunck_size, Inp_2 = max_seq_len, labels = labels, kmer_model=k_mer)
 
         """ /////compile the model for the training ///"""
 
