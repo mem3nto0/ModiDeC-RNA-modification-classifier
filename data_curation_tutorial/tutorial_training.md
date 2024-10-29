@@ -14,4 +14,4 @@ Additional specifications are needed for training the neural network:
   4)  The variable name NN specifies the name of the saved model (4).
   5)  The user can also specify if a validation of the retrained model is needed, by typing yes or no. 
 
-After the settings are settled, press the button "training neural network" to retrain ModiDeC. When the training is finished, a folder with the name of the neural network will be created in the save folder that contain the trained neural network.
+After the settings are settled, press the button "Start training" to retrain ModiDeC. When the training is finished, a folder with the name of the neural network will be created in the "save folder" that contains the trained neural network.
