@@ -1,6 +1,6 @@
 # Tutorial Part 2: Training of the neural network 
 
-https://github.com/mem3nto0/ModiDeC-RNA-modification-classifier/blob/main/data_curation_tutorial/Figure_training.png
+![GUI for retraining ModiDeC](https://github.com/mem3nto0/ModiDeC-RNA-modification-classifier/blob/main/data_curation_tutorial/Figure_training.png)
 
 
 ### Training Data Input
