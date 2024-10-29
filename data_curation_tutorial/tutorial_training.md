@@ -1,4 +1,7 @@
-## Tutorial Part 2: Training of the neural network 
+# Tutorial Part 2: Training of the neural network 
+
+https://github.com/mem3nto0/ModiDeC-RNA-modification-classifier/blob/main/data_curation_tutorial/Figure_training.png
+
 
 ### Training Data Input
 For training the neural network with own data, the directories containing the data need to be specified. First, the training data directory should contain the raw signal sequence stored in a .npz file obtained from the data curation step before. In the validation data directory, the labels should also be stored in a .npz file. The save model folder specifies the path where the trained model will be stored.
