@@ -10,8 +10,10 @@ dataset for training ModiDeC for your specific problem.
 
 ### Important Steps for running the GUI
 
-The raw signal has to be basecalled using Dorado basecaller. the --emit-move flag has to be used during basecalling for further resquiggle process. 
-Additionally, the basecalled signal has to be aligned using "samtools" to generate a .bam file.
+data has to be basecalled using Dorado and aligned using samtools:
+
+  1) Basecall your data using Dorado with the --emit-move. It is necessary for resquiggleling process.
+  2) aligned using "samtools" to generate a .bam file
 
 ### Select Input files and save directory (Section 1)
 
