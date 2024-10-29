@@ -8,14 +8,14 @@ for further steps and retraining the neural network.
 The figure shows three sections with several variables as inputs. In this Tutorial, we will explain the several steps to do to correctly generate your own
 dataset for training ModiDeC for your specific problem.
 
-### Important Steps for running the GUI
+## Important Steps for running the GUI
 
 data has to be basecalled using Dorado and aligned using samtools:
 
   1) Basecall your data using Dorado with the --emit-move. It is necessary for resquiggleling process.
   2) aligned using "samtools" to generate a .bam file
 
-### Select Input files and save directory (Section 1)
+## Select Input files and save directory (Section 1)
 
 In this section, the input files can be selected using the several Gui buttons.
 
