@@ -78,3 +78,6 @@ Now, for this case we want that ModiDeC analyzes closely the modified signal. Ha
 additionally, we want to save 16 raw signal per file, which means that "batch size" is 16 and consequently shift in time is 25 (400/16). Setting in mind these values, we can run the GUI and start
 fo fill the variable for analyzing first Gm, than m6a and in the end the unmodified data. in the figure below you can see how the GUI was filled with our goal with the three runs. The red squares
 show what was changed in the GUI between one run and the other.
+
+![generating the data](https://github.com/mem3nto0/ModiDeC-RNA-modification-classifier/blob/main/data_curation_tutorial/data_creation_example.png)
+
