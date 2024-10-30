@@ -8,7 +8,7 @@ for further steps and retraining the neural network.
 The figure shows three sections with several variables as inputs. In this Tutorial, we will explain the several steps to do to correctly generate your own
 dataset for training ModiDeC for your specific problem.
 
-Initially, we will give a description of the inputs that can be introduced in the GUI for data creation. In the second part of file, an example will be
+Initially, we will give a description of the inputs that can be introduced in the GUI for data creation. In the second part of the file, an example will be
 provide to show what are the steps to do for creating the training data.
 
 ## Important Steps for running the GUI
