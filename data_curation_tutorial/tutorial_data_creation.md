@@ -62,4 +62,19 @@ After filling all the variables, press the button "Start resguigle" and .npz fil
 
 ## Practical example data training generation: Create a training data set containing Gm and m6A modification
 
-This 
+We want to give a practical example on how to fill the GUI for generating training data for ModiDeC. We have two oligos, one containing one Gm modification at position 64 in the reference and another one
+containing m6A ad position 75 in the reference. Additionally, we also have an un-modified oligo as well.
+
+First step, basecall each of the three oligos pod5 files indipently Using Dorado with the --emit-move flag. this means that I will have a .ubam file for Gm, one for m6A and one for Un-mod. After it,
+Use sametools to align each basecalled data to its corresponding sequence to obtain three .bam files. in the end, we should have something like this:
+
+  1) Gm_pod5_folder + Gm_bam_folder(containing "Gm_aligned.bam" file)
+  2) m6A_pod5_folder + m6A_bam_folder(containing "m6A_aligned.bam" file)
+  3) unmodified_pod5_folder + unmofied_bam_folder(containing "unmodifed_aligned.bam" file)
+
+You want to save all of them in the same folder for the training, then create a folder called "training_data".
+
+Now, for this case we want that ModiDeC analyzes closely the modified signal. Having this purpose, we can set the "chunck size" parameter to 400, which means that the "max seq. length" is 40.
+additionally, we want to save 16 raw signal per file, which means that "batch size" is 16 and consequently shift in time is 25 (400/16). Setting in mind these values, we can run the GUI and start
+fo fill the variable for analyzing first Gm, than m6a and in the end the unmodified data. in the figure below you can see how the GUI was filled with our goal with the three runs. The red squares
+show what was changed in the GUI between one run and the other.
