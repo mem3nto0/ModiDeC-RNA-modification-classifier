@@ -14,7 +14,7 @@ analyzing an aligned sample using a pretrained neural network. We decided to cre
 
 the figure below shows a general overview of ModiDeC GUIs. The first thing that can be observed is that the GUIs are divided in”ModiDeC data curation”, “ModiDeC training” and “ModiDeC analysis”. 
 
-![GUI for retraining ModiDeC](https://github.com/mem3nto0/ModiDeC-RNA-modification-classifier/blob/main/data_curation_tutorial/Analysis_GUI.png)
+![GUI for retraining ModiDeC](https://github.com/mem3nto0/ModiDeC-RNA-modification-classifier/blob/main/Gui_pipeline.png)
 
 in the tutorial folder it is possible to find detailed tutorials for each of the three GUI.
 
