@@ -1,6 +1,6 @@
 # ModiDeC-RNA-modification-classifier
 
-![GUI for retraining ModiDeC](https://github.com/mem3nto0/ModiDeC-RNA-modification-classifier/blob/main/data_curation_tutorial/Analysis_GUI.png)
+![GUI for retraining ModiDeC](https://github.com/mem3nto0/ModiDeC-RNA-modification-classifier/blob/main/git_hub_modiDeC.png)
 
 ModiDeC is Personalized two input neural network that was designed to indentify RNA modifications from direct RNA sequencing using
 RNA002 or RNA004 Oxford Nanopore technology (ONT) kits. In details, ModiDeC combines LSTM and new designed inception-res-net block for
