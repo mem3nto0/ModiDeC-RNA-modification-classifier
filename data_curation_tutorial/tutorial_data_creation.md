@@ -77,7 +77,9 @@ You want to save all of them in the same folder for the training, then create a 
 Now, for this case we want that ModiDeC analyzes closely the modified signal. Having this purpose, we can set the "chunck size" parameter to 400, which means that the "max seq. length" is 40.
 additionally, we want to save 16 raw signal per file, which means that "batch size" is 16 and consequently shift in time is 25 (400/16). Setting in mind these values, we can run the GUI and start
 fo fill the variable for analyzing first Gm, than m6a and in the end the unmodified data. in the figure below you can see how the GUI was filled with our goal with the three runs. The red squares
-show what was changed in the GUI between one run and the other.
+show what was changed in the GUI between one run and the other. In each run, press the button "start resguille" for creating the training data.
 
 ![generating the data](https://github.com/mem3nto0/ModiDeC-RNA-modification-classifier/blob/main/data_curation_tutorial/data_creation_example.png)
 
+In the figure it is possible to observe that "pod5 file folder" and "bam file folder" are also marked in red. This because for each run you have to load the corresponding pod5 and bam folder.
+The "training_data" folder that we created will be filled with .npz files containing the modification resquiglle signal for the training phase.
