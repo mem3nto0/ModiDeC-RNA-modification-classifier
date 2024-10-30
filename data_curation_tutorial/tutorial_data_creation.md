@@ -15,7 +15,7 @@ data has to be basecalled using Dorado and aligned using samtools:
   1) Basecall your data using Dorado with the --emit-move. It is necessary for resquiggleling process.
   2) aligned using "samtools" to generate a .bam file
 
-## Select Input files and save directory (Section 1)
+## Select Input files and save-directory (Section 1)
 
 In this section, the input files can be selected using the several Gui buttons.
 
@@ -27,11 +27,16 @@ In this section, the input files can be selected using the several Gui buttons.
 We use the bam folder instead of a single file selection because, in certain cases, multiple .bam files can be obtained by the same pod5 measurement.
 if this is the case, generating multiple .bam files the GUI automatically analyzes all the bam files without any data overwriting.
 
-Example for multiple bam: if during the alignment using samtools you used the first alignment flag, use samtools to generate a single .bam file for each
+Example for multiple bam: if you used the first alignment flag during the alignment using samtools, use samtools to generate a single .bam file for each
 reference. then create a folder containing all the bam files created in this way. Use this folder for the GUI and all the bam files will be used for the data generation of training data.
 
-### General variable for training data (Section 1)
+## General variable for training data (Section 2)
 
-In this section,
+This second section of the GUI focuses on giving sequence information for the data sets the user wants to use for training. In fact, information like "modification position" or "modified data"
+can be selected and let the users use their oligos for retraining the neural network. here below, a description of the input is provided:
 
+  1) "modification_data?": it is a yes or no question. The user can specify if the data are modified or not. It is useful if the user wants to add un-modfied reads for the training.
+  2) "take_modification_region?": it is a yes or no question. The user can decide to use all the read for the analysis or use only the signal region around the
+     modification position that can be selected a few steps later. For example, it is useful for un-modified data for taking more k-mer for the analysis.
+  3)
 
