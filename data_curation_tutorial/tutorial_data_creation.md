@@ -8,6 +8,9 @@ for further steps and retraining the neural network.
 The figure shows three sections with several variables as inputs. In this Tutorial, we will explain the several steps to do to correctly generate your own
 dataset for training ModiDeC for your specific problem.
 
+Initially, we will give a description of the inputs that can be introduced in the GUI for data creation. In the second part of file, an example will be
+provide to show what are the steps to do for creating the training data.
+
 ## Important Steps for running the GUI
 
 data has to be basecalled using Dorado and aligned using samtools:
@@ -25,18 +28,38 @@ In this section, the input files can be selected using the several Gui buttons.
   4) "kmer-level table file" button: select the k-mer level table for the 004 or 002 kit. These files are provided by ONT.
 
 We use the bam folder instead of a single file selection because, in certain cases, multiple .bam files can be obtained by the same pod5 measurement.
-if this is the case, generating multiple .bam files the GUI automatically analyzes all the bam files without any data overwriting.
+If this is the case, generating multiple .bam files the GUI automatically analyzes all the bam files without any data overwriting.
 
 Example for multiple bam: if you used the first alignment flag during the alignment using samtools, use samtools to generate a single .bam file for each
 reference. then create a folder containing all the bam files created in this way. Use this folder for the GUI and all the bam files will be used for the data generation of training data.
 
 ## General variable for training data (Section 2)
 
-This second section of the GUI focuses on giving sequence information for the data sets the user wants to use for training. In fact, information like "modification position" or "modified data"
+This second section of the GUI focuses on giving sequence information for the data sets the user wants to use for training. Information like "modification position" or "modified data"
 can be selected and let the users use their oligos for retraining the neural network. here below, a description of the input is provided:
 
   1) "modification_data?": it is a yes or no question. The user can specify if the data are modified or not. It is useful if the user wants to add un-modfied reads for the training.
   2) "take_modification_region?": it is a yes or no question. The user can decide to use all the read for the analysis or use only the signal region around the
      modification position that can be selected a few steps later. For example, it is useful for un-modified data for taking more k-mer for the analysis.
-  3)
+  3) "name_save_file": specify the name of the file that will be saved. For each modification that you want to analyze or if the data are modified or not, give a new name.
+  4) "What type of modification?: it is a string linked also to the modification dictionary. For example, if you have in your dictionary two modifications (m6A and Gm), type Gm if you want
+     to create training data for Gm, or type m6A to create training data for m6A.
+  5) "Bases before modification": It can be a positive or negative integer. Choose the number of bases to consider before (positive values) or after (negative values) for the resquiggle. Use 0
+     if you want to take only a few bases around the modification position. This feature can be useful depending on the oligos design.
+  6) "Modification dictionary": come separated list of the total modifications that ModiDeC has to learn. For example, For Gm and m6A write in the box "Gm,m6A".
 
+## Segmentation variables for training data (Section 3)
+
+This third section focuses on raw signal and neural network features that can be personalized by the user. A description of the input is provided:
+
+  1) "batch size": it is the number of raw signal that we will be saved in a single file. This is helpful to reduce memory problems during the saving process. Recommended value 16.
+  2) "max seq- length": it is an integer linked to one of the inputs of the neural network. It is linked to the maximum number of bases to use for the input. A Good value is "chunk length" divided by 10.
+  3) "chunk length": it is an integer that tells you how much is bit the time window to extract from the raw signal. IT is linked to one of the inputs of the neural network.
+  4) "shift in time": indicates how many time points to move for creating a new representation of the modified raw signal. suggested value is "chunk length" divided "batch size".
+  5) "start read number" and "end read number": Integers to select the pod5 reads indexes to use for generating data.
+
+After filling all the variables, press the button "Start resguigle" and .npz files will be generated in the save-folder.
+
+## Practical example data training generation: Create a training data set containing Gm and m6A modification
+
+This 
