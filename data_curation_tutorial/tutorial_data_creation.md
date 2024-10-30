@@ -60,7 +60,7 @@ This third section focuses on raw signal and neural network features that can be
 
 After filling all the variables, press the button "Start resguigle" and .npz files will be generated in the save-folder.
 
-## Practical example data training generation: Create a training data set containing Gm and m6A modification
+## Practical example training data generation: Create a training data set containing Gm and m6A modification
 
 We want to give a practical example on how to fill the GUI for generating training data for ModiDeC. We have two oligos, one containing one Gm modification at position 64 in the reference and another one
 containing m6A ad position 75 in the reference. Additionally, we also have an un-modified oligo as well.
