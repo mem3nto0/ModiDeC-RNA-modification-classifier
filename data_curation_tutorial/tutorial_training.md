@@ -15,6 +15,6 @@ Additional specifications are needed for training the neural network:
   2) The k-mer model (2) can be adjusted to the type of data used for training. Both data sequenced from RNA002 and RNA004 flowcells from Oxford Nanopore Technologies can be used for training the model: for RNA002, insert the number 5 (5-mer). For RNA004, insert the number 9 (9-mer).
   3)  Insert the number of epochs for the training (3). We recommend setting the number of epochs to four.
   4)  The variable name NN specifies the name of the saved model (4).
-  5)  The user can also specify if a validation of the retrained model is needed, by typing yes or no. 
+  5)  The user can also specify if a validation of the retrained model is needed, by typing yes or no (5). 
 
 After the settings are settled, press the button "Start training" to retrain ModiDeC. When the training is finished, a folder with the name of the neural network will be created in the "save folder" that contains the trained neural network.
