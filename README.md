@@ -18,3 +18,6 @@ the figure below shows a general overview of ModiDeC GUIs. The first thing that 
 
 in the tutorial folder it is possible to find detailed tutorials for each of the three GUI.
 
+## Collaboration
+
+This work is a collaboration partnership with the group of Prof. Dr. Susanne Gerber, Uni Medical Center, Mainz. https://csg.uni-mainz.de/group-member/susanne-gerber/
