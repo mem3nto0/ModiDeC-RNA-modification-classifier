@@ -19,7 +19,7 @@ Here below is a list of the libraries used for ModiDeC creation:
      numpy == 1.26.4 
      ont-remora == 3.2.0 
 
-We also offer a ".yml" file to install the same conda environment to run all the ModiDeC GUI.
+We also offer a "remora_TF2_env.yml" file to install the same conda environment to run all the ModiDeC GUI.
 
 IMPORTANT: ont-remora libraries is a Linux-based library, which means that ModiDeC can be used in Linx system or Windows with WSL.
 
