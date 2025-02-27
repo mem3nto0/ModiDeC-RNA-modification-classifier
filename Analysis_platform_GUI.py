@@ -230,9 +230,11 @@ class MainWindow(QMainWindow):
         self.NN_model = tf.keras.models.load_model(model_path)
 
         input_shapes = self.NN_model.input_shape
+        output_shape = self.NN_model.output_shape
         
         self.chunck_size = int(input_shapes[0][1])
         self.max_seq_len = int(input_shapes[1][1])
+        self.total_mod = output_shape[2] - 1
 
         print("initialize: Done")
 
@@ -255,7 +257,7 @@ class MainWindow(QMainWindow):
                                             self.sig_map_refiner, 
                                             self.NN_model, 
                                             reference,
-                                            labels_mod = 4)
+                                            labels_mod = self.total_mod)
 
         print("Analysis finished")
 
