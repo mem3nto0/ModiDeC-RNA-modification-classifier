@@ -34,6 +34,13 @@ the figure below shows a general overview of ModiDeC GUIs. The first thing that 
 
 in the tutorial folder it is possible to find detailed tutorials for each of the three GUI.
 
+## Epi2Me pipeline link
+
+We also implemented ModiDeC in Epi2Me. Epi2Me links repositary can be found here below.
+
+https://github.com/Nanopore-Hackathon/wf-modidec_analysis
+https://github.com/Nanopore-Hackathon/wf-modidec_training
+
 ## Collaboration
 
 This work is a collaboration partnership with the group of Prof. Dr. Susanne Gerber, Uni Medical Center, Mainz. https://csg.uni-mainz.de/group-member/susanne-gerber/
