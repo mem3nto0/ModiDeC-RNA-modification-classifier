@@ -38,8 +38,11 @@ in the tutorial folder it is possible to find detailed tutorials for each of the
 
 We also implemented ModiDeC in Epi2Me. Epi2Me links repositary can be found here below.
 
-https://github.com/Nanopore-Hackathon/wf-modidec_analysis
+https://github.com/Nanopore-Hackathon/wf-modidec_data-curation
+
 https://github.com/Nanopore-Hackathon/wf-modidec_training
+
+https://github.com/Nanopore-Hackathon/wf-modidec_analysis
 
 ## Collaboration
 
