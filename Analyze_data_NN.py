@@ -68,7 +68,6 @@ def NN_analyzer(variables, pod5_dr, bam_fh, read_id, sig_map_refiner, model, ref
 
             # /// check if the modification position has to be adjusted ///
             position_adjusting = start_of_mapping.ref_reg.start
-            seq_resquigle = seq_resquigle.replace("U", "T")
         
         except:
             position_adjusting = 0
