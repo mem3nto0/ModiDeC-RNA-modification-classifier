@@ -55,8 +55,13 @@ def NN_analyzer(variables, pod5_dr, bam_fh, read_id, sig_map_refiner, model, ref
         try:
             #/// read data
             read_analysed = io.Read.from_pod5_and_alignment(pod5_read, bam_read, reverse_signal = flip)
-
-            # // resquigle the data with the refence
+            
+            #/// If data were aligned with U, U in sequence will be replaced by the T. Important for resquiggle
+            prob_ref = read_analysed.ref_seq
+            prob_ref = probe_new_ref.replace("U", "T")
+            read_analysed.ref_seq = prob_ref
+            
+            # // resquigle the data with the reference
             read_analysed.set_refine_signal_mapping(sig_map_refiner, ref_mapping=True)
             
             start_of_mapping = read_analysed.extract_ref_reg(
