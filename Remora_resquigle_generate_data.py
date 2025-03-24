@@ -85,7 +85,6 @@ def Remora_resquigle_Generation_data(data_path, bam_file, level_table_file, save
 
             # /// check if the modification position has to be adjusted ///
             position_adjusting =start_of_mapping.ref_reg.start
-            seq_resquigle = seq_resquigle.replace("U", "T")
             
         except:
 
