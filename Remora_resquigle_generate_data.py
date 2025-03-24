@@ -72,6 +72,8 @@ def Remora_resquigle_Generation_data(data_path, bam_file, level_table_file, save
         try:
             #/// read data
             read_analysed = io.Read.from_pod5_and_alignment(pod5_read, bam_read, reverse_signal = flip)
+            
+            #/// If data were aligned with U, U in sequence will be replaced by the T. Important for resquiggle
             prob_ref = read_analysed.ref_seq
             prob_ref = probe_new_ref.replace("U", "T")
             read_analysed.ref_seq = prob_ref
