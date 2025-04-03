@@ -7,7 +7,7 @@ RNA002 or RNA004 Oxford Nanopore technology (ONT) kits. In detail, ModiDeC combi
 the multi-classification process. In this GitHub repository, we offer the ModiDeC models and several user graphic interfaces to retrain 
 from scratch the neural network to readapt ModiDeC to your specific problem.
 
-## Requirements
+## Requirements and Installation
 
 ModiDeC uses simple libraries such as NumPy and TensorFlow. It also uses the pre-compiled library "ont-remora" from ONT.
 Here below is a list of the libraries used for ModiDeC creation:
@@ -19,8 +19,14 @@ Here below is a list of the libraries used for ModiDeC creation:
      numpy == 1.26.4 
      ont-remora == 3.2.0 
 
-We also offer a "remora_TF2_env.yml" file to install the same conda environment to run all the ModiDeC GUI.
+To install the Conda environment to run the ModiDeC GUI, we suggest running the two following command lines in the prompt
+of Linux or WSL.
 
+     sudo apt install gcc -y
+     conda env create -f environment.yml
+
+These two command lines will install C and C++ interpreters (needed for Remora) and it will create a new conda environment called
+"Remora_TF2". Rembemer to move t
 IMPORTANT: ont-remora libraries is a Linux-based library, which means that ModiDeC can be used in Linx system or Windows with WSL.
 
 ## General information ModiDeC GUI
