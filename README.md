@@ -23,11 +23,12 @@ To install the Conda environment to run the ModiDeC GUI, we suggest running the 
 of Linux or WSL.
 
      sudo apt install gcc -y
-     conda env create -f environment.yml
+     conda env create -f /path_to_ModiDeC_folder/remora_TF2_env.yml
 
-These two command lines will install C and C++ interpreters (needed for Remora) and it will create a new conda environment called
-"Remora_TF2". Rembemer to move t
-IMPORTANT: ont-remora libraries is a Linux-based library, which means that ModiDeC can be used in Linx system or Windows with WSL.
+These two command lines will install C and C++ interpreters (needed for Remora), and it will create a new conda environment called
+"Remora_TF2". 
+
+IMPORTANT: The ont-remora library is a Linux-based library, which means that ModiDeC can be used in the Linx system or Windows with WSL.
 
 ## General information ModiDeC GUI
 
