@@ -64,3 +64,8 @@ class Load_data_RNA(keras.utils.Sequence):
             }
             
         return X_total,  self.labels
+
+
+    def on_epoch_end(self):
+        """Shuffle indices after each epoch"""
+        np.random.shuffle(self.ind_rand)   
