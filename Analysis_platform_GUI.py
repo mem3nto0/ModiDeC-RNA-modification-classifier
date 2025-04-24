@@ -8,7 +8,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 import pod5
 from remora import io , refine_signal_map, util
 import tensorflow as tf
-from Analyze_data_NN import NN_analyzer
+from Analyze_data_NN_V2 import NN_analyzer
 
 
 """ to generate a window into a window two main class has to be defined"""
