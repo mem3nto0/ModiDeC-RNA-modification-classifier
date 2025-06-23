@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Alagna 
+  given-names: Nicolo
+orcid: https://orcid.org/0009-0006-0804-5774
+title:mem3nto0/ModiDeC-RNA-modification-classifier: ModiDeC_RNA_modification_classifier
+version: ModiDeC
+date-released: 2025-06-23
