@@ -58,5 +58,3 @@ This work is a collaboration partnership with the group of Prof. Dr. Susanne Ger
 ## Credit and Licence
 
 This code is provided by Dr. Nicolo Alagna and the Computational Systems Genetics Group of the University Medical Center of Mainz. © 2024 All rights reserved.
-
-This code is licensed for non-commercial academic use only. See LICENSE file.
