@@ -177,6 +177,7 @@ def NN_analyzer(variables, pod5_dr, bam_fh, read_id, sig_map_refiner, model, ref
 
                     where_mod = np.where(Final_seq_binary >= 1)[0]
                     modific_detec = np.zeros(len(where_mod))
+                    Track_coverage[ int(position_adjusting): int(position_adjusting) +  int(end_of_sequence)] += 1
 
                     for j in range(len(where_mod)):
 
@@ -198,7 +199,6 @@ def NN_analyzer(variables, pod5_dr, bam_fh, read_id, sig_map_refiner, model, ref
 
                         reference_track_mod[int(mod_probe_position) + int(position_adjusting), int(mod_probe_predicted -1)] += 1   
 
-                    Track_coverage[ int(position_adjusting): int(position_adjusting) +  int(end_of_sequence)] += 1
 
             except:
 
