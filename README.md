@@ -54,7 +54,3 @@ https://github.com/Nanopore-Hackathon/wf-modidec_analysis
 ## Collaboration
 
 This work is a collaboration partnership with the group of Prof. Dr. Susanne Gerber, Uni Medical Center, Mainz. https://csg.uni-mainz.de/group-member/susanne-gerber/
-
-## Credit and Licence
-
-This code is provided by Dr. Nicolo Alagna and the Computational Systems Genetics Group of the University Medical Center of Mainz. © 2024
